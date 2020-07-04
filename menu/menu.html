@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+  <title>点餐</title>
+  <script>
+    (function () {
+      var docEl = document.documentElement;
+
+      function setRemUnit () {
+        // 获取到rem的基准值
+        var rem = docEl.clientWidth / 10;
+
+        // 动态设置html根元素的fontSize
+        docEl.style.fontSize = rem + 'px';
+      }
+
+      setRemUnit();
+
+      // 窗口大小变化时 触发
+      window.addEventListener('resize', setRemUnit);
+
+      // 窗口出现在当前屏幕时
+      window.addEventListener('pageshow', function (e) {
+        if (e.persisted) {
+          setRemUnit();
+        }
+      });
+    })();
+  </script>
+  <link rel="stylesheet" href="../lib/reset.css">
+  <link rel="stylesheet" href="../common/navHeader/navHeader.css">
+  <link rel="stylesheet" href="../common/headerTab/headerTab.css">
+  <link rel="stylesheet" href="./left/left.css">
+  <link rel="stylesheet" href="./right/right.css">
+  <link rel="stylesheet" href="./shopBar/shopBar.css">
+</head>
+<body>
+  <!-- 头部开始 -->
+  <div class="nav">
+    <div class="back-icon"></div>
+    <h4 class="title">深圳麦当劳前海二餐厅</h4>
+  </div>
+  <!-- 头部结束 -->
+
+  <!-- tabbar开始 -->
+  <div class="tab-bar"></div>
+  <!-- tabbar结束 -->
+
+  <!-- 点菜内容区开始 -->
+  <div class="menu-inner">
+    <div class="left-bar">
+      <div class="left-bar-inner"></div>
+    </div>
+    <div class="right-content">
+      <p class="right-title"></p>
+      <div class="right-list">
+        <div class="right-list-inner"></div>
+      </div>
+    </div>
+    <!-- 购物车区域开始 -->
+    <div class="shop-bar">
+      <div class="mask hide"></div>
+    </div>
+    <!-- 购物车区域结束 -->
+  </div>
+  <!-- 点菜内容区结束 -->
+  <script src="../lib/jquery.min.js"></script>
+  <script src="./left/left.js"></script>
+  <script src="./right/right.js"></script>
+  <script src="./shopBar/shopBar.js"></script>
+  <script src="../common/headerTab/headerTab.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+.search-bar {
+  width: 100%;
+  height: 1.066667rem;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: .213333rem;
+}
+
+.search-bar .bar-location {
+  margin-right: .533333rem;
+  border-radius: .346667rem;
+  background-color: rgba(0, 0, 0, .33);
+  width: 2.453333rem;
+  height: .746667rem;
+}
+
+.search-bar .location-icon {
+  display: inline-block;
+  width: .4rem;
+  height: .533333rem;
+  vertical-align: .293333rem;
+  margin-left: .133333rem;
+  background-image: url(../img/locationIcon.png);
+  background-size: cover;
+}
+
+.search-bar .location-text {
+  position: relative;
+  display: inline-block;
+  font-size: .373333rem;
+  color: #fff;
+  vertical-align: .4rem;
+  margin-left: -0.08rem;
+  margin-right: .053333rem;
+}
+
+.search-bar .location-text::after {
+  content: '';
+  display: inline-block;
+  width: .373333rem;
+  height: .373333rem;
+  background-image: url(../img/arrowIcon.png);
+  background-size: cover;
+  position: absolute;
+  right: -0.4rem;
+  top: -0.026667rem
+}
+
+.search-bar .search-button {
+  position: relative;
+  width: 4.533333rem;
+  height: .8rem;
+  background-color: #fff;
+  border-radius: .533333rem;
+}
+
+.search-bar .place-holder::before {
+  content: '';
+  display: inline-block;
+  width: .373333rem;
+  height: .373333rem;
+  background-image: url(../img/searchIcon.png);
+  background-size: cover;
+  position: absolute;
+  left: .14rem;
+  top: .213333rem;
+}
+
+.search-bar .place-holder {
+  color: #a9a9a9;
+  font-size: .373333rem;
+  height: 100%;
+  line-height: .8rem;
+  margin-left: .746667rem;
+}

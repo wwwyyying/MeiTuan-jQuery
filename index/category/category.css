@@ -1,0 +1,22 @@
+.category-content {
+  padding-bottom: .266667rem;
+}
+
+.category-content .category-item {
+  float: left;
+  width: 25%;
+  padding-top: .373333rem;
+  font-size: .346667rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.category-content .item-icon {
+  width: 1.253333rem;
+}
+
+.category-content .item-name {
+  margin: .373333rem;
+}

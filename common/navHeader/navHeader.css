@@ -1,0 +1,26 @@
+.nav {
+  height: 1.706667rem;
+  border-bottom: .026667rem solid #b2b2b2;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: #fff;
+}
+
+.nav .title {
+  font-size: .453333rem;
+  color: #2f2f2f;
+  text-align: center;
+  line-height: 1.946667rem;
+}
+
+.nav .back-icon {
+  width: .72rem;
+  height: .72rem;
+  position: absolute;
+  top: .613333rem;
+  left: .32rem;
+  background-image: url(./img/back.png);
+  background-size: cover;
+}

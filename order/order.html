@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+  <title>订单</title>
+  <script>
+    (function () {
+      var docEl = document.documentElement;
+
+      function setRemUnit () {
+        // 获取到rem的基准值
+        var rem = docEl.clientWidth / 10;
+
+        // 动态设置html根元素的fontSize
+        docEl.style.fontSize = rem + 'px';
+      }
+
+      setRemUnit();
+
+      // 窗口大小变化时 触发
+      window.addEventListener('resize', setRemUnit);
+
+      // 窗口出现在当前屏幕时
+      window.addEventListener('pageshow', function (e) {
+        if (e.persisted) {
+          setRemUnit();
+        }
+      });
+    })();
+  </script>
+  <link rel="stylesheet" href="../lib/reset.css">
+  <link rel="stylesheet" href="./header/header.css">
+  <link rel="stylesheet" href="./contentList/contentList.css">
+  <link rel="stylesheet" href="../common/bottomBar/bottomBar.css">
+</head>
+<body>
+  <!-- 头部开始 -->
+  <header class="header">订单</header>
+  <!-- 头部结束 -->
+
+  <!-- 订单列表开始 -->
+  <div class="wrap">
+    <div class="order-list"></div>
+    <div class="loading">加载中</div>
+  </div>
+  <!-- 订单列表结束 -->
+
+  <!-- 底部栏开始 -->
+  <div class="bottom-bar"></div>
+  <!-- 底部栏结束 -->
+  <script src="../lib/jquery.min.js"></script>
+  <script src="./contentList/contentList.js"></script>
+  <script src="../common/bottomBar/bottomBar.js"></script>
+</body>
+</html>

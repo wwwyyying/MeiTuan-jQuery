@@ -1,0 +1,123 @@
+.list-content {
+  overflow: hidden;
+  padding-bottom: 1.333333rem;
+}
+
+.list-content .list-title {
+  text-align: center;
+  font-size: .426667rem;
+  margin-top: .373333rem;
+  margin-bottom: .133333rem;
+}
+
+.list-content .title-line {
+  display: inline-block;
+  border-bottom: .026667rem solid #949494;
+  height: .026667rem;
+  width: .8rem;
+  margin-left: .106667rem;
+  margin-right: .106667rem;
+  margin-bottom: .106667rem; 
+}
+
+.loading {
+  padding-bottom: .266667rem;
+  padding-top: .266667rem;
+  font-size: .426667rem;
+  text-align: center;
+  color: #ccc;
+}
+
+.r-item-content {
+  display: flex;
+  padding-top: .4rem;
+  padding-bottom: .4rem;
+  margin-left: .266667rem;
+  margin-right: .266667rem;
+  color: #656565;
+  position: relative;
+}
+
+.r-item-content .item-img {
+  width: 2.293333rem;
+  height: 1.733333rem;
+  border: .026667rem solid #e4e4e4;
+}
+
+.r-item-content .item-info-content {
+  flex: 1;
+  margin-left: .186667rem;
+  overflow: hidden;
+}
+
+.r-item-content .brand {
+  position: absolute;
+  left: 0.026667rem;
+  top: .426667rem;
+  font-size: .32rem;
+  padding: .053333rem;
+  color: #fff;
+}
+
+.r-item-content .brand-pin {
+  background-color: #ffa627;
+}
+
+.r-item-content .brand-xin {
+  background-color: #21c56c;
+}
+
+.r-item-content .item-title {
+  margin-top: .08rem;
+  font-size: .426667rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.r-item-content .item-desc {
+  margin-top: .346667rem;
+  font-size: .32rem;
+}
+
+.r-item-content .item-count {
+  float: left;
+  margin-left: .133333rem;
+}
+
+.r-item-content .item-time {
+  float: right;
+}
+
+.r-item-content .item-distance {
+  float: right;
+}
+
+.r-item-content .item-score {
+  float: left;
+}
+
+.r-item-content .item-price {
+  margin-top: .266667rem;
+  font-size: .32rem;
+  height: .64rem;
+}
+
+.r-item-content .other-info {
+  color: #898989;
+  margin-top: .186667rem;
+  font-size: .32rem;
+  display: flex;
+}
+
+.r-item-content .other-tag {
+  width: .373333rem;
+  height: .373333rem;
+}
+
+.r-item-content .other-content {
+  margin-left: .08rem;
+  height: .373333rem;
+  width: 6.133333rem;
+  margin-top: .026667rem;
+}
+
