@@ -17,6 +17,7 @@ time, mark, audio, video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    text-decoration: none;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -28,6 +29,9 @@ body {
 }
 ol, ul {
     list-style: none;
+}
+a, a:visited, a:hover, a:active{
+    text-decoration: none;
 }
 blockquote, q {
     quotes: none;

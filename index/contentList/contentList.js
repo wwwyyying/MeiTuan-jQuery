@@ -25,7 +25,7 @@
             <img class="item-img" src=${element.pic_url} />
             ${getBrand(element)}
             <div class="item-info-content">
-              <p class="item-title">${element.name}</p>
+              <p class="item-title"><a class="item-link" href="../menu/menu.html">${element.name}</a></p>
               <div class="item-desc clearfix">
                 <div class="item-score">${new StarScore(element.wm_poi_score).getStars()}</div>
                 <div class="item-count">月售${getMonthNum(element)}</div>

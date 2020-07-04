@@ -67,10 +67,13 @@
   background-color: #21c56c;
 }
 
-.r-item-content .item-title {
-  margin-top: .08rem;
+.r-item-content .item-title{
+  margin-top: -2rem;
   font-size: .426667rem;
   font-weight: 600;
+  
+}
+.r-item-content .item-title .item-link{
   color: #333;
 }
 
